@@ -17,7 +17,6 @@
 		table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
 		img { -ms-interpolation-mode: bicubic; }
 
-
 		/* RESET STYLES */
 		img { border: 0; outline: none; text-decoration: none; }
 		table { border-collapse: collapse !important; }
@@ -126,10 +125,14 @@
 			.imgresize90 img {width:90% !important; height:auto !important;}
 			/*WIDTH RESIZERS*/
 			.resize90 {width:90% !important; height:auto !important;}
-
 		/*INSERT ADDITIONAL MOBILE SYTLES ABOVE THIS LINE*/
 		}
-
+		/* MEDIA QUERIES - THESE ARE DARK STYLES - STAY WITHIN THE @MEDIA CURLY BRACES */
+			@media (prefers-color-scheme: dark){ 
+			/*DARK MODE RESET STYLES*/
+		.darkMode {color: #9b2323;}
+		/*INSERT ADDITIONAL DARKMODE SYTLES ABOVE THIS LINE*/
+	}
 		</style>
 	</head>
 <body style="margin:0; padding:0; mso-line-height-rule: exactly;">
@@ -158,7 +161,7 @@
 	<!-- TEMPLATE BODY - INSERT SNIPPETS BELOW -->
 
 <!-- FULL WIDTH BACKGROUND COLOR - KHAKI -->
-<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#697170">
 <tr>
     <td align="center" valign="top">
 	<!-- LOGO -->
@@ -187,7 +190,7 @@
 
 <!-- CAMPAIGN BODY START - END AT 305 -->		
 	<!-- ! PRIMARY HEADLINE ! USE ONLY ONCE PER EMAIL ! -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#697170">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -199,8 +202,12 @@
 					<tr>
 						<td align="left" valign="top">
 						<!-- USE ONLY 1 <H1> ELEMENT, AS THE FIRST TEXT ELEMENT WHENEVER POSSIBLE -->
+							<td class="darkMode">
+								<ht>Test</ht>
+							</td>
+							
 							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; color: #4a4a4a; display: inline-block;">Read it online</h1> &nbsp;
-							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; color: #ffffff; display: inline-block;">September 3.</h1>
+							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; color: #70807f; display: inline-block;">October 1.</h1>
 							</td>
 					</tr>
 				</table>
@@ -216,7 +223,7 @@
 
 
 	<!-- FULL WIDTH TEXT -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#697170">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -224,18 +231,18 @@
 			<tr>
 				<td align="center" valign="top">
 			<!-- ALIGNMENT TABLE - CHANGE width="" TO ADJUST DISPLAY WIDTH -->
-			<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-					<td align="left" valign="top">
-						<p style="font-family: 'farnham headline', Georgia, serif;  font-size: 20px; line-height: 1.5; color: #4a4a4a">
-							<strong>Special online-only section.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</td>
-				</tr>
-			</table>
+				<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td align="left" valign="top">
+							<p style="font-family: 'farnham headline', Georgia, serif;  font-size: 20px; line-height: 1.5; color: #4a4a4a">
+								<strong>Special online-only section.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						</td>
+					</tr>
+				</table>
 
-			</td>
-		</tr>
-	<!-- SPACER -->
+				</td>
+			</tr>
+		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
 			</tr>
@@ -245,7 +252,7 @@
 
 
 	<!-- LEFT SIDECAR -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#697170">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -279,7 +286,7 @@
 					<!-- HEADLINE -->
 							<tr>
 								<td class="left-align w-pad" align="left" valign="top">
-							<h2 style="color: #4a4a4a; display: inline-block;">FREE for subscribers.</h2>
+							<h2 style="color: #70807f; display: inline-block;">FREE for subscribers.</h2>
 								</td>
 							</tr>
 						<!-- ROW SPACER -->
@@ -341,12 +348,12 @@
 <!-- END FULL WIDTH BACKGROUND COLOR - DARK -->
 
 <!-- FULL WIDTH BACKGROUND COLOR - LIGHT, FOOTER -->
-<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2">
     <tr>
         <td align="center" valign="top">
 
     <!-- SECONDARY HEADLINE -->
-    <table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+    <table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
         <!-- SPACER -->
             <tr>
                 <td height="25" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -373,7 +380,7 @@
     <!-- END SECONDARY HEADLINE -->
 
 	<!-- 2 COLUMN CONTENT: IMAGE, TEXT, BUTTON -->
-		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" >
+		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2" >
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -445,7 +452,7 @@
 
 			
 	<!-- ! ADDRESS ! REQUIRED FOR ALL EMAILS ! -->
-		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
