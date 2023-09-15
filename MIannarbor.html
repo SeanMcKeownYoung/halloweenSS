@@ -27,10 +27,6 @@
 			
 		/* HIDE ON DESKTOP */
 			.desktopOff { max-height: 0px; font-size: 0px; display: none; }
-
-		/* DARK MODE HIDE */
-		.darkMode { width: 0px !important; display: none !important; }
-			.lightMode { display: block !important; max-height:none !important; font-size:10px !important; }
 			
 		/* iOS BLUE LINKS */
 		a[x-apple-data-detectors] {
@@ -133,13 +129,7 @@
 
 		/*INSERT ADDITIONAL MOBILE SYTLES ABOVE THIS LINE*/
 		}
-		/* MEDIA QUERIES - THESE ARE DARK STYLES - STAY WITHIN THE @MEDIA CURLY BRACES */
-		@media (prefers-color-scheme: dark){ 
-			/*DARK MODE RESET STYLES*/
-			.lightMode { width: 0px !important; display: none !important; }
-			.darkMode { display: block !important; max-height:none !important; font-size:10px !important; }
-		/*INSERT ADDITIONAL DARKMODE SYTLES ABOVE THIS LINE*/
-	}
+
 		</style>
 	</head>
 <body style="margin:0; padding:0; mso-line-height-rule: exactly;">
@@ -181,11 +171,8 @@
 
 				<!-- LOGO BAR  -->
 					<!-- ADD IMG RESIZER CLASS TO THIS <td>, NOT <img> -->
-						<td class="imgresize100 img lightMode" align="left" valign="top">
+						<td class="imgresize100 img" align="left" valign="top">
 							<a rel="noopener" href="https://subscribe.mlive.com/?SiteCode=AA" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_Lockup.png" height="60" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="The Ann Arbor News Online" /></a>
-						</td>
-						<td class="imgresize100 img darkMode" align="left" valign="top">
-							<a rel="noopener" href="https://subscribe.mlive.com/?SiteCode=AA" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_white.png" height="60" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="The Ann Arbor News Online" /></a>
 						</td>
 				</table>
 
