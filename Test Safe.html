@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Get in the game with the NFL Preview!</title>
+		<title>Spooky Season is coming soon and so is our digital-only Halloween special section!</title>
 
 		<style type="text/css">
 
@@ -25,8 +25,6 @@
 		h1, h2, h3, h4, h5, h6, p { margin: 0 !important; }
 		h2 {font-family: Arial, Helvetica, sans-serif; font-weight: 300; font-size: 24px;}
 			
-		/* HIDE ON DESKTOP */
-			.desktopOff { max-height: 0px; font-size: 0px; display: none; }
 			
 		/* iOS BLUE LINKS */
 		a[x-apple-data-detectors] {
@@ -130,6 +128,31 @@
 		/*INSERT ADDITIONAL MOBILE SYTLES ABOVE THIS LINE*/
 		}
 
+		/* LIGHT/DARK MODE CLASSES */
+
+		/* HIDE ON DESKTOP */
+		.desktopOff { max-height: 0px; font-size: 0px; display: none; }
+
+		/* DARK MODE HIDE */
+		.darkMode { width: 0px !important; display: none !important; }
+		.lightMode { display: block !important; max-height:none !important; font-size:10px !important; }
+
+		/* LIGHT COLOR SCHEME */
+		.standardMode { background-color: #ffa25c; }
+		.textMode {color: #4a4a4a}
+		.accentMode {color:#ffffff}
+
+		/* DARK COLOR SCHEME */
+		@media (prefers-color-scheme: dark){ 
+			/*DARK MODE RESET STYLES*/
+			.lightMode { width: 0px !important; display: none !important; }
+			.darkMode { display: block !important; max-height:none !important; font-size:10px !important; }
+
+			.standardMode { background-color: #5f1a78; }
+			.textMode {color: #ffffff;}
+			.accentMode {color: #a3b1b0;}
+		/*INSERT ADDITIONAL DARKMODE SYTLES ABOVE THIS LINE*/
+	}
 		</style>
 	</head>
 <body style="margin:0; padding:0; mso-line-height-rule: exactly;">
@@ -149,7 +172,7 @@
 		max-width:0px;
 		opacity:0;
 		overflow:hidden;">
-		NFL Preview. a special online-only section coming September 3. 
+		Spooky Season is coming soon and so is our digital-only Halloween special section!
 		</td>
 	</tr>
 	<!-- END PREHEADER -->
@@ -158,7 +181,7 @@
 	<!-- TEMPLATE BODY - INSERT SNIPPETS BELOW -->
 
 <!-- FULL WIDTH BACKGROUND COLOR - KHAKI -->
-<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 <tr>
     <td align="center" valign="top">
 	<!-- LOGO -->
@@ -168,12 +191,20 @@
 				<td height="30" style="font-size:10px; line-height:1;">&nbsp;</td>
 			</tr>
 			<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+
 				<!-- LOGO BAR  -->
 					<!-- ADD IMG RESIZER CLASS TO THIS <td>, NOT <img> -->
-						<td class="imgresize100 img" align="left" valign="top">
-							<a rel="noopener" href="https://subscribe.oregonlive.com" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/OR_Portland_Lockup_1.png" height="24" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="The Oregonian Online" /></a>
+						<td class="img lightMode" align="left" valign="top">
+							<a rel="noopener" href="https://subscribe.mlive.com/?SiteCode=AA" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_Lockup.png" width="60%" style="margin:0; padding:0; border:none; position: absolute; display:inline-block; max-width: 400px;" border="0" alt="The Ann Arbor News Online" /></a>
 						</td>
+						<td class="img darkMode" align="left" valign="top">
+							<a rel="noopener" href="https://subscribe.mlive.com/?SiteCode=AA" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_white.png" width="60%" style="margin:0; padding:0; border:none; position: absolute; display:inline-block; max-width: 400px;" border="0" alt="The Ann Arbor News Online" /></a>
+						</td>
+						<tr>
+							<td height="60" style="font-size:10px; line-height:1;">&nbsp;</td>
+						</tr>
 				</table>
+
 
 		<!-- SPACER -->
 			<tr>
@@ -185,7 +216,7 @@
 
 <!-- CAMPAIGN BODY START - END AT 305 -->		
 	<!-- ! PRIMARY HEADLINE ! USE ONLY ONCE PER EMAIL ! -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -197,8 +228,8 @@
 					<tr>
 						<td align="left" valign="top">
 						<!-- USE ONLY 1 <H1> ELEMENT, AS THE FIRST TEXT ELEMENT WHENEVER POSSIBLE -->
-							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; color: #4a4a4a; display: inline-block;">Read it online</h1> &nbsp;
-							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; color: #70807f; display: inline-block;">September 3.</h1>
+							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; display: inline-block;" class="textMode"> Read it online</h1> &nbsp;
+							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; display: inline-block;"class="accentMode">October 1.</h1>
 							</td>
 					</tr>
 				</table>
@@ -214,7 +245,7 @@
 
 
 	<!-- FULL WIDTH TEXT -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -222,18 +253,18 @@
 			<tr>
 				<td align="center" valign="top">
 			<!-- ALIGNMENT TABLE - CHANGE width="" TO ADJUST DISPLAY WIDTH -->
-				<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td align="left" valign="top">
-							<p style="font-family: 'farnham headline', Georgia, serif;  font-size: 20px; line-height: 1.5; color: #4a4a4a;"><strong>Special online-only section.</strong> Find all the latest on your
-								favorite team in this season's NFL Preview — a subscriber-exclusive special section publishing with your online paper.</p>
-						</td>
-					</tr>
-				</table>
+			<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td align="left" valign="top">
+						<p style="font-family: 'farnham headline', Georgia, serif;  font-size: 20px; line-height: 1.5" class="textMode">
+							<strong>Special online-only section.</strong> Costumes, candy, jack-o'-lanterns and maybe a few frights — it's that time of year to flip through our Halloween pages and have a little fun for the holiday . . . if you dare.</p>
+					</td>
+				</tr>
+			</table>
 
-				</td>
-			</tr>
-		<!-- SPACER -->
+			</td>
+		</tr>
+	<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
 			</tr>
@@ -243,7 +274,7 @@
 
 
 	<!-- LEFT SIDECAR -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -258,7 +289,7 @@
 						<td class="stack imgresize100 w-pad"  width="425" align="left" valign="top">
 						<!-- FILE DIMENSIONS SHOULD BE DOUBLE FOR RETINA DISPLAY
 							width="" attribute must be set -->
-						<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/NFL-ANIMATION-FINAL.gif" width="425" style="margin:0; padding:0; border:none; display:block; filter: drop-shadow(-5px 2px 5px rgba(0, 0, 0, 0.55));" border="0" alt="Cover" />
+						<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/HALLOWEEN-ANIMATION-FINAL_1.gif" width="425" style="margin:0; padding:0; border:none; display:block; filter: drop-shadow(-5px 2px 5px rgba(0, 0, 0, 0.55));" border="0" alt="Cover" />
 						</td>
 					<!-- COLUMN SPACER -->
 						<td class="stack" width="30" align="center" valign="top" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
@@ -277,7 +308,7 @@
 					<!-- HEADLINE -->
 							<tr>
 								<td class="left-align w-pad" align="left" valign="top">
-							<h2 style="color: #70807f; display: inline-block;">FREE for subscribers.</h2>
+							<h2 class="textMode" style="display: inline-block;">FREE for subscribers.</h2>
 								</td>
 							</tr>
 						<!-- ROW SPACER -->
@@ -287,7 +318,7 @@
 					<!-- BODY TEXT -->
 							<tr>
 								<td class="left-align w-pad" align="left" valign="top">
-									<p style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.5; color: #4a4a4a;">Print subscribers get free access to the online newspaper with more content, special sections, the New York Times Book Review, and Washington Post Weekly edition by activating their account.</p>
+									<p class="textMode" style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.5">Print subscribers get free access to the online newspaper with more content, special sections, the New York Times Book Review, and Washington Post Weekly edition by activating their account.</p>
 								</td>
 							</tr>
 						<!-- ROW SPACER -->
@@ -305,7 +336,8 @@
 										<!-- PADDING ON THIS <td> MAKES WIDTH RESPONSIVE TO LENGTH OF BUTTON TEXT -->
 										<td style="padding: 12px 50px 12px 20px; border-radius:0px; background-color: #70807f;" align="center">
 <!-- CAMPAIGN BODY END -->		
-											<a rel="noopener" href="enewsPO.oregonlive.com" target="_blank" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: regular; color: #ffffff; text-decoration: none; display: inline-block;">Activate!</a>
+
+											<a rel="noopener" href="https://enewsAA.mlive.com" target="_blank" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: regular; color: #ffffff; text-decoration: none; display: inline-block;">Activate!</a>
 										</td>
 									</tr>
 						<!-- ROW SPACER -->
@@ -385,13 +417,12 @@
 
 						<table class="mobile-300" role="presentation" cellpadding="0" cellspacing="0" border="0">
 					<!-- BODY TEXT -->
-                    
 			<!-- DEESKTOP-ONLY CONTACTS LIST -->						
 							<tr>
 								<td align="left" valign="top">
 									<p style="font-family: 'Arial', sans-serif; font-size: 13.5px; line-height: 1.4; color: #4a4a4a;">Having trouble viewing this email? <a rel="noopener" href="{view_url}" target="_blank" style="color:#4a4a4a; text-decoration:underline;">View in your browser	
 									<span class="desktopOn mobileOff"><br><br></span></a>
-									To ensure receipt of our emails, please add <a rel="noopener" href="mailto:customercare@sts.oregonlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">customercare@sts.oregonlive.com</a> to your address book or a safe sender list. You received this email because you are a subscriber to <a rel="noopener" href="https://oregonlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">oregonlive.com</a> or The Oregonian.</p>
+									To ensure receipt of our emails, please add <a rel="noopener" href="mailto:customercare@sts.mlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">customercare@sts.mlive.com</a> to your address book or a safe sender list. You received this email because you are a subscriber to <a rel="noopener" href="https://mlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">mlive.com</a> or The Ann Arbor News</p>
 								</td>
 
 							</tr>
@@ -415,18 +446,17 @@
 							<tr>
 								<td align="left" valign="top">
                                     <p style="font-family: 'Arial', sans-serif; font-size: 13.5px; line-height: 1.4; color: #000000;">
-                                        <a rel="noopener" href="https://www.oregonlive.com/editors/page/how_to_contact_the_oregonian.html" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Contact Us</a><br>
-                                        <a rel="noopener" href="https://www.oregonlive.com/mobile-device/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Download our app</a><br>
-                                        <a rel="noopener" href="https://www.oregonlive.com/privacy-policy/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Privacy policy</a><br>
-                                        <a rel="noopener" href="https://subscription.oregonlive.com/newsletters/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">More newsletters</a><br>
-                                        <a rel="noopener" href="https://myaccount.oregonlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Manage subscription</a><br>
+                                        <a rel="noopener" href="https://www.mlive.com/mlive_contacts/page/contact_home.html" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Contact Us</a><br>
+                                        <a rel="noopener" href="https://www.mlive.com/mobile-device/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Download our app</a><br>
+                                        <a rel="noopener" href="https://www.mlive.com/privacy-policy/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Privacy policy</a><br>
+                                        <a rel="noopener" href="https://subscription.mlive.com/newsletters/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">More newsletters</a><br>
+                                        <a rel="noopener" href="https://myaccount.mlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Manage subscription</a><br>
                                         <a rel="noopener" href="{optout_confirm_url + '&list_param=' + blast.list}" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Unsubscribe</a>
                                     </p>
 								</td>
 							</tr>
 						</table>
 					<!-- COLUMN SPACER -->
-
 					<td class="stack" width="20" align="center" valign="top" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
 						</td>
 			<!-- END RIGHT COLUMN -->
@@ -453,23 +483,24 @@
 				<td align="center" valign="top">
 			<!-- ALIGNMENT TABLE -->
 				<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+
 				<!-- LOGO BAR  -->
 					<!-- ADD IMG RESIZER CLASS TO THIS <td>, NOT <img> -->
 						<td class="imgresize100 img" align="left" valign="top">
-							<a rel="noopener" href="https://www.oregonlive.com" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/OR_Portland_Lockup_1.png" height="24" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="The Oregonian, oregonlive.com" /></a>
+							<a rel="noopener" href="https://www.mlive.com/news/ann-arbor/" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_Address.png" height="45" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="The Ann Arbor News, mlive.com" /></a>
 						</td>
 
 
 
                 <!-- ADDRESS -->
+
 				<tr>
 					<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
 				</tr>
 				<tr>
 					<td align="left" valign="top">
-						<p style="font-family: 'Arial', sans-serif; font-size: 10px; line-height: 1.4; text-transform: uppercase; color: #4a4a4a;"> 1500 SW First Ave. Suite 500, Portland, OR 97201</p>
+						<p style="font-family: 'Arial', sans-serif; font-size: 10px; line-height: 1.4; text-transform: uppercase; color: #4a4a4a;"> 111 N Ashley St., Ann Arbor, MI 48104</p>
 					</td>
-
 				</tr>
 				</table>
 			</td>
