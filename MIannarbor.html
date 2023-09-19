@@ -4,6 +4,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="color-scheme" content="light dark">
+		<meta name="supported-color-schemes" content="light dark">
+
+
 
 		<title>Spooky Season is coming soon and so is our digital-only Halloween special section!</title>
 
@@ -23,10 +27,10 @@
 		table { border-collapse: collapse !important; }
 		body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
 		h1, h2, h3, h4, h5, h6, p { margin: 0 !important; }
+		h1 {font-size: 46px;}
 		h2 {font-family: Arial, Helvetica, sans-serif; font-weight: 300; font-size: 24px;}
+
 			
-		/* HIDE ON DESKTOP */
-			.desktopOff { max-height: 0px; font-size: 0px; display: none; }
 			
 		/* iOS BLUE LINKS */
 		a[x-apple-data-detectors] {
@@ -115,13 +119,17 @@
 			.h-pad { padding: 5px 0 !important; }
 			/*WIDTH PADDING*/
 			.w-pad { padding: 0 30px !important; }
+			.w-pad2 { padding: 0 10px !important; }
 			/*TEXT RESIZERS*/
 			.h1-text-resize { font-size:24px !important; line-height:1.2 !important; }
+			h1 {font-size: 11vw; line-height: 0.8;}
 			.h2-text-resize { font-size:18px !important; line-height:1.2 !important; }
 			.h3-text-resize { font-size:16px !important; line-height:1.2 !important; }
 			.body-text-resize { font-size:14px !important; line-height:1.2 !important; }
 			/*IMAGE RESIZERS*/
 			.imgresize100 img {width:100% !important; height:auto !important;}
+			.imgresize100h img {height:40px !important; width:auto !important;}
+			.imgresize10vw img {width:90vw !important; height:auto !important;}
 			.imgresize120 img {width:120% !important; height:auto !important;}
 			.imgresize90 img {width:90% !important; height:auto !important;}
 			/*WIDTH RESIZERS*/
@@ -130,7 +138,60 @@
 		/*INSERT ADDITIONAL MOBILE SYTLES ABOVE THIS LINE*/
 		}
 
+		/* HIDE ON DESKTOP */
+		.desktopOff { max-height: 0px; font-size: 0px; display: none; }
+
+
+		/* LIGHT/DARK MODE CLASSES */
+
+		/* DARK MODE HIDE */
+		.darkMode { width: 0px !important; display: none !important; }
+		.lightMode { display: block !important; max-height:none !important; font-size:10px !important; }
+
+		/* LIGHT COLOR SCHEME */
+		.standardMode { background-color: #ffa25c; }
+		.footerMode {background-color: #ffffff; color: #1e1e1e;}
+		.textMode {color: #4a4a4a}
+		.accentMode {color:#5f1a78}
+
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		  }
+		@media (prefers-color-scheme: dark) {
+			.lightimage { display: none !important;}
+	 		.darkimageWrapper,
+	 		.darkimage { display: block !important;}
+		  }
+		@media (prefers-color-scheme: dark) {
+			.lightimageFooter { display: none !important;}
+	 		.darkimageWrapperFooter,
+	 		.darkimageFooter { display: inline-block !important;}
+		  }
+
+		/* DARK COLOR SCHEME */
+		@media (prefers-color-scheme: dark){ 
+			/*DARK MODE RESET STYLES*/
+			.lightMode { width: 0px !important; display: none !important; }
+			.darkMode { display: block !important; max-height:none !important; font-size:10px !important; }
+			.standardMode { background-color: #5f1a78; }
+			.footerMode {background-color: #1e1e1e; color: #ffffff;}
+			.textMode {color: #ffffff;}
+			.accentMode {color: #ffa25c;}
+		}
+		/*INSERT ADDITIONAL DARK MODE SYTLES ABOVE THIS LINE*/
 		</style>
+
+<!--[if gte mso 16]> 
+<style> 
+.textMode { 
+mso-style-textfill-type:gradient; 
+mso-style-textfill-fill-gradientfill-stoplist:"0 \#4A4A4A -1 100000\,100000 \#4A4A4A -1 100000"; 
+color:#000000 !important; 
+} 
+</style> 
+<![endif]-->
+
 	</head>
 <body style="margin:0; padding:0; mso-line-height-rule: exactly;">
 
@@ -157,12 +218,13 @@
 		<td align="center" valign="top">
 	<!-- TEMPLATE BODY - INSERT SNIPPETS BELOW -->
 
-<!-- FULL WIDTH BACKGROUND COLOR - KHAKI -->
-<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+
+<!-- FULL WIDTH BACKGROUND COLOR - ADJUSTABLE -->
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 <tr>
     <td align="center" valign="top">
 	<!-- LOGO -->
-		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="transparent">
+		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0">
 		<!-- SPACER -->
 			<tr>
 				<td height="30" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -170,10 +232,15 @@
 			<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
 
 				<!-- LOGO BAR  -->
+
 					<!-- ADD IMG RESIZER CLASS TO THIS <td>, NOT <img> -->
+					<tr>
 						<td class="imgresize100 img" align="left" valign="top">
-							<a rel="noopener" href="https://subscribe.mlive.com/?SiteCode=AA" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_Lockup2.png" height="60" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="The Ann Arbor News Online" /></a>
+							<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_light_5.png" height="60" width="auto" class="lightimage" style="margin:0; padding:0; border:none; display:block; max-width: 400px;" border="0" alt="The Ann Arbor News Online" >
+						<div class="imgresize100 img darkimageWrapper" style="mso-hide: all; display: none">
+							<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_dark_3.png" height="60" width="auto" class="darkimage" style="margin:0; padding:0; border:none; display:none;" border="0" alt="The Ann Arbor News Online">
 						</td>
+					</tr>
 				</table>
 
 
@@ -187,7 +254,7 @@
 
 <!-- CAMPAIGN BODY START - END AT 305 -->		
 	<!-- ! PRIMARY HEADLINE ! USE ONLY ONCE PER EMAIL ! -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -199,8 +266,9 @@
 					<tr>
 						<td align="left" valign="top">
 						<!-- USE ONLY 1 <H1> ELEMENT, AS THE FIRST TEXT ELEMENT WHENEVER POSSIBLE -->
-							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; color: #4a4a4a; display: inline-block;">Read it online</h1> &nbsp;
-							<h1 style="font-family: 'farnham headline', Georgia, serif; font-size: 48px; line-height: 1; color: #d16615; display: inline-block;">October 1.</h1>
+							<h1 style="font-family: 'farnham headline', Georgia, serif; display: inline;" class="textMode"> Read it online</h1> &nbsp;
+							<div class="desktopOff mobileOn" style="line-height: 0.8;"><br></div>
+							<h1 style="font-family: 'farnham headline', Georgia, serif; display: inline;"class="accentMode">October 1.</h1>
 							</td>
 					</tr>
 				</table>
@@ -216,7 +284,7 @@
 
 
 	<!-- FULL WIDTH TEXT -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -227,7 +295,7 @@
 			<table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td align="left" valign="top">
-						<p style="font-family: 'farnham headline', Georgia, serif;  font-size: 20px; line-height: 1.5; color: #4a4a4a">
+						<p style="font-family: 'farnham headline', Georgia, serif;  font-size: 20px; line-height: 1.5" class="textMode">
 							<strong>Special online-only section.</strong> Costumes, candy, jack-o'-lanterns and maybe a few frights — it's that time of year to flip through our Halloween pages and have a little fun for the holiday . . . if you dare.</p>
 					</td>
 				</tr>
@@ -245,7 +313,7 @@
 
 
 	<!-- LEFT SIDECAR -->
-	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e3">
+	<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffa25c" class="standardMode">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -257,7 +325,7 @@
 					<tr>
 			<!-- IMAGE COLUMN -->
 					<!-- ADD IMG RESIZER CLASS TO THIS <td>, NOT <img> -->
-						<td class="stack imgresize100 w-pad"  width="425" align="left" valign="top">
+						<td class="stack imgresize10vw w-pad2"  width="425" align="left" valign="top">
 						<!-- FILE DIMENSIONS SHOULD BE DOUBLE FOR RETINA DISPLAY
 							width="" attribute must be set -->
 						<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/HALLOWEEN-ANIMATION-FINAL_1.gif" width="425" style="margin:0; padding:0; border:none; display:block; filter: drop-shadow(-5px 2px 5px rgba(0, 0, 0, 0.55));" border="0" alt="Cover" />
@@ -279,7 +347,7 @@
 					<!-- HEADLINE -->
 							<tr>
 								<td class="left-align w-pad" align="left" valign="top">
-							<h2 style="color: #d16615; display: inline-block;">FREE for subscribers.</h2>
+							<h2 class="textMode" style="display: inline-block;">FREE for subscribers.</h2>
 								</td>
 							</tr>
 						<!-- ROW SPACER -->
@@ -289,12 +357,12 @@
 					<!-- BODY TEXT -->
 							<tr>
 								<td class="left-align w-pad" align="left" valign="top">
-									<p style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.5; color: #4a4a4a;">Print subscribers get free access to the online newspaper with more content, special sections, the New York Times Book Review, and Washington Post Weekly edition by activating their account.</p>
+									<p class="textMode" style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.5">Print subscribers get free access to the online newspaper with more content, special sections, the New York Times Book Review, and Washington Post Weekly edition by activating their account.</p>
 								</td>
 							</tr>
 						<!-- ROW SPACER -->
 							<tr>
-								<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
+								<td height="20" style="font-size:10px; line-height:1;">&nbsp;</td>
 							</tr>
 					<!-- BULLETPROOF BUTTON -->
 							<tr>
@@ -305,10 +373,10 @@
 								<table class="left-align" role="presentation" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<!-- PADDING ON THIS <td> MAKES WIDTH RESPONSIVE TO LENGTH OF BUTTON TEXT -->
-										<td style="padding: 12px 50px 12px 20px; border-radius:0px; background-color: #d16615;" align="center">
+										<td style="padding: 12px 50px 12px 20px; border: 3px solid #ffa25c; background-color: #5f1a78;" align="center">
 <!-- CAMPAIGN BODY END -->		
 
-											<a rel="noopener" href="https://enewsAA.mlive.com" target="_blank" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: regular; color: #ffffff; text-decoration: none; display: inline-block;">Activate!</a>
+											<a rel="noopener" href="https://enewsAA.mlive.com" target="_blank" style="font-size: 22px; font-family: Helvetica, Arial, sans-serif; font-weight: regular; color: #ffa25c; text-decoration: none; display: inline-block;">Explore!</a>
 										</td>
 									</tr>
 						<!-- ROW SPACER -->
@@ -341,15 +409,15 @@
 <!-- END FULL WIDTH BACKGROUND COLOR - DARK -->
 
 <!-- FULL WIDTH BACKGROUND COLOR - LIGHT, FOOTER -->
-<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="footerMode">
     <tr>
         <td align="center" valign="top">
 
     <!-- SECONDARY HEADLINE -->
-    <table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+    <table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" class="footerMode">
         <!-- SPACER -->
             <tr>
-                <td height="25" style="font-size:10px; line-height:1;">&nbsp;</td>
+                <td height="45" style="font-size:10px; line-height:1;">&nbsp;</td>
             </tr>
             <tr>
                 <td align="center" valign="top">
@@ -357,7 +425,7 @@
                 <table class="mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                         <td align="left" valign="top">
-                            <h2 style="color: #d16615;">
+                            <h2 class="footerMode">
 								We're here to help</h2>
                         </td>
                     </tr>
@@ -373,7 +441,7 @@
     <!-- END SECONDARY HEADLINE -->
 
 	<!-- 2 COLUMN CONTENT: IMAGE, TEXT, BUTTON -->
-		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" >
+		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" class="footerMode" >
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -391,9 +459,9 @@
 			<!-- DEESKTOP-ONLY CONTACTS LIST -->						
 							<tr>
 								<td align="left" valign="top">
-									<p style="font-family: 'Arial', sans-serif; font-size: 13.5px; line-height: 1.4; color: #4a4a4a;">Having trouble viewing this email? <a rel="noopener" href="{view_url}" target="_blank" style="color:#4a4a4a; text-decoration:underline;">View in your browser	
+									<p style="font-family: 'Arial', sans-serif; font-size: 13.5px; line-height: 1.4;" class="footerMode">Having trouble viewing this email? <a rel="noopener" href="{view_url}" target="_blank" style="text-decoration:underline;"class="footerMode">View in your browser	
 									<span class="desktopOn mobileOff"><br><br></span></a>
-									To ensure receipt of our emails, please add <a rel="noopener" href="mailto:customercare@sts.mlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">customercare@sts.mlive.com</a> to your address book or a safe sender list. You received this email because you are a subscriber to <a rel="noopener" href="https://mlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">mlive.com</a> or The Ann Arbor News</p>
+									To ensure receipt of our emails, please add <a rel="noopener" href="mailto:customercare@sts.mlive.com" target="_blank" style="text-decoration:underline;"class="footerMode">customercare@sts.mlive.com</a> to your address book or a safe sender list. You received this email because you are a subscriber to <a rel="noopener" href="https://mlive.com" target="_blank" style="text-decoration:underline;"class="footerMode">mlive.com</a> or The Ann Arbor News</p>
 								</td>
 
 							</tr>
@@ -417,12 +485,12 @@
 							<tr>
 								<td align="left" valign="top">
                                     <p style="font-family: 'Arial', sans-serif; font-size: 13.5px; line-height: 1.4; color: #000000;">
-                                        <a rel="noopener" href="https://www.mlive.com/mlive_contacts/page/contact_home.html" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Contact Us</a><br>
-                                        <a rel="noopener" href="https://www.mlive.com/mobile-device/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Download our app</a><br>
-                                        <a rel="noopener" href="https://www.mlive.com/privacy-policy/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Privacy policy</a><br>
-                                        <a rel="noopener" href="https://subscription.mlive.com/newsletters/" target="_blank" style="color:#4a4a4a; text-decoration:underline;">More newsletters</a><br>
-                                        <a rel="noopener" href="https://myaccount.mlive.com" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Manage subscription</a><br>
-                                        <a rel="noopener" href="{optout_confirm_url + '&list_param=' + blast.list}" target="_blank" style="color:#4a4a4a; text-decoration:underline;">Unsubscribe</a>
+                                        <a rel="noopener" href="https://www.mlive.com/mlive_contacts/page/contact_home.html" target="_blank" style="text-decoration:underline;"class="footerMode">Contact Us</a><br>
+                                        <a rel="noopener" href="https://www.mlive.com/mobile-device/" target="_blank" style="text-decoration:underline;"class="footerMode">Download our app</a><br>
+                                        <a rel="noopener" href="https://www.mlive.com/privacy-policy/" target="_blank" style="text-decoration:underline;"class="footerMode">Privacy policy</a><br>
+                                        <a rel="noopener" href="https://subscription.mlive.com/newsletters/" target="_blank" style="text-decoration:underline;"class="footerMode">More newsletters</a><br>
+                                        <a rel="noopener" href="https://myaccount.mlive.com" target="_blank" style="text-decoration:underline;"class="footerMode"">Manage subscription</a><br>
+                                        <a rel="noopener" href="{optout_confirm_url + '&list_param=' + blast.list}" target="_blank" style="text-decoration:underline;"class="footerMode">Unsubscribe</a>
                                     </p>
 								</td>
 							</tr>
@@ -443,9 +511,10 @@
 		</table>
 	<!-- END 2 COLUMN CONTENT: IMAGE, TEXT, BUTTON -->
 
+
 			
 	<!-- ! ADDRESS ! REQUIRED FOR ALL EMAILS ! -->
-		<table class="mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+		<table class="mobile-320 footerMode" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0">
 		<!-- SPACER -->
 			<tr>
 				<td height="10" style="font-size:10px; line-height:1;">&nbsp;</td>
@@ -457,10 +526,24 @@
 
 				<!-- LOGO BAR  -->
 					<!-- ADD IMG RESIZER CLASS TO THIS <td>, NOT <img> -->
-						<td class="imgresize100 img" align="left" valign="top">
-							<a rel="noopener" href="https://www.mlive.com/news/ann-arbor/" target="_blank"><img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_Address.png" height="45" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="The Ann Arbor News, mlive.com" /></a>
-						</td>
 
+
+						<td class="imgresize100h img" align="left" valign="top">
+
+							<div class="lightimageFooter" style="margin:0; padding:0; border:none; display: inline-block;">
+								<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_light_5.png" height="50" class="lightimageFooter" style="margin:0; padding:0; border:none;" alt="The Ann Arbor News, mlive.com">
+								<span class="mobileOff">&nbsp;&#8203;&nbsp;&#8203;</span>
+								<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/mlive_light.png" height="50" alt="The Ann Arbor News, mlive.com" >
+							</div>
+
+							<div class="darkimageWrapperFooter" style="mso-hide: all; display: none">
+								<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/MI_AnnArbor_dark_3.png" height="50" class="darkimageFooter" style="margin:0; padding:0; border:none; display:none;" alt="The Ann Arbor News, mlive.com">
+								<span class="mobileOff">&nbsp;&#8203;&nbsp;&#8203;</span>
+								<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/mlive_dark.png" height="50" alt="The Ann Arbor News, mlive.com" >
+							</div>
+
+							
+						</td>
 
 
                 <!-- ADDRESS -->
@@ -470,7 +553,7 @@
 				</tr>
 				<tr>
 					<td align="left" valign="top">
-						<p style="font-family: 'Arial', sans-serif; font-size: 10px; line-height: 1.4; text-transform: uppercase; color: #4a4a4a;"> 111 N Ashley St., Ann Arbor, MI 48104</p>
+						<p style="font-family: 'Arial', sans-serif; font-size: 10px; line-height: 1.4; text-transform: uppercase;" > 111 N Ashley St., Ann Arbor, MI 48104</p>
 					</td>
 				</tr>
 				</table>
